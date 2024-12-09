@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/imagenes/logokamflix.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>KAMFLIX</title>
+    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <h1><a href="index.html" class="logo">KAMFLIX</a></h1>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu-list">
+                        <li class="menu-list-item active"><a href="index.html">Inicio</a></li>
+                        <li class="menu-list-item active"><a href="Peliculas.html">Películas</a></li>
+                        <li class="menu-list-item active"><a href="Series.html" class="activo">Series</a></li>
+                        <li class="menu-list-item active"><a href="MiLista.html">Mi lista</a></li>
+                    </ul>
+                </div>
+                <div class="profile-container">
+                    <img class="profile-picture" src="/imagenes/Profile-PNG.png" alt="">
+                    <div class="profile-text-container">
+                        <span class="profile-text">Cuenta</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</header>
+    <main>
+		<section class="pelicula-principal3">
+			<div class="contenedor">
+				<h3 class="titulo-principal">La ley de los audaces</h3>
+				<p class="descripcion">
+					El gran abogado corporativo de Manhattan, Harvey Specter y su equipo, Donna Paulsen, Louis Litt y Alex Williams, se lanzan a un juego por obtener el poder cuando un nuevo socio se une a la empresa. Con sus dos mejores colegas fuera y Jessica de regreso en Chicago, Specter y el equipo intentan adaptarse.
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+			</div>
+		</section>
+
+        <!-- Carrusel -->
+        <section class="carrusel">
+            <div class="carrusel-contenedor">
+                <button class="carrusel-boton prev" onclick="moverCarrusel(-1)">&#10094;</button>
+                <button class="carrusel-boton next" onclick="moverCarrusel(1)">&#10095;</button>
+                <div class="carrusel-items">
+                    <div class="carrusel-item">
+                        <img src="imagenes/Series/Game of Thrones.webp" alt="Game of Thrones">
+                        <div class="overlay">
+                            <h3>Game of Thrones</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/Series/Game of Thrones.webp')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/Series/dexter.jpg" alt="dexter">
+                        <div class="overlay">
+                            <h3>Dexter</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('/imagenes/Series/dexter.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/Series/BreakingBad-splash.jpg" alt="bb">
+                        <div class="overlay">
+                            <h3>Breaking Bad</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/Series/BreakingBad-splash.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/Series/prison-break-wallpaper-preview.jpg" alt="prison-break">
+                        <div class="overlay">
+                            <h3>Prison Break</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/Series/prison-break-wallpaper-preview.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/Series/casa-de-papel.jpg" alt="casa-de-papel">
+                        <div class="overlay">
+                            <h3>La Casa de Papel</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/Series/casa-de-papel.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/Series/dark.jpg" alt="dark">
+                        <div class="overlay">
+                            <h3>Dark</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/Series/dark.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/Series/bridgerton.jpg" alt="bridgerton">
+                        <div class="overlay">
+                            <h3>Bridgerton</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/Series/bridgerton.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/Series/riverdale.jpg" alt="riverdale">
+                        <div class="overlay">
+                            <h3>Riverdale</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/Series/riverdale.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</main><br><br>
+    <footer class="footer">
+        <div class="contenido-footer">
+            <div class="seccion-footer">
+                <p><a href="#">Centro de ayuda</a></p>
+                <p><a href="#">Empleo</a></p>
+                <p><a href="#">Preferencias de cookies</a></p>
+            </div>
+            <div class="seccion-footer">
+                <p><a href="#">Trajetas de regalo</a></p>
+                <p><a href="#">Términos de uso</a></p>
+                <p><a href="#">Información corporativa</a></p>
+            </div>
+            <div class="seccion-footer">
+                <p><a href="#">Prensa</a></p>
+                <p><a href="#">Privacidad</a></p>
+                <p><a href="#">contáctanos</a></p>
+            </div>
+        </div><br><br>
+        <div class="info-final">
+            <h3>
+                Proyecto de clase. Curso Programación Básica. Talento Tech.
+            </h3>
+        </div>
+    </footer>
+</body>
+</html>

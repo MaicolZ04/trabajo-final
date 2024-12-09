@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/imagenes/logokamflix.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>KAMFLIX</title>
+    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <h1><a href="index.html" class="logo">KAMFLIX</a></h1>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu-list">
+                        <li class="menu-list-item active"><a href="index.html">Inicio</a></li>
+                        <li class="menu-list-item active"><a href="Peliculas.html" class="activo">Películas</a></li>
+                        <li class="menu-list-item active"><a href="Series.html">Series</a></li>
+                        <li class="menu-list-item active"><a href="MiLista.html">Mi lista</a></li>
+                    </ul>
+                </div>
+                <div class="profile-container">
+                    <img class="profile-picture" src="/imagenes/Profile-PNG.png" alt="">
+                    <div class="profile-text-container">
+                        <span class="profile-text">Cuenta</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</header>
+    <main>
+		<section class="pelicula-principal2"> 
+			<div class="contenedor">
+				<h3 class="titulo-principal">Furiosa</h3>
+				<p class="descripcion">
+					La joven Furiosa es arrebatada del Paraje Verde de las Muchas Madres por una horda de motociclistas. El señor de la guerra que dirige su grupo se enfrenta a otro tirano y, mientras tanto, Furiosa aprovecha la batalla para intentar volver a casa.
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+			</div>
+		</section>
+
+        <!-- Carrusel -->
+        <section class="carrusel">
+            <div class="carrusel-contenedor">
+                <button class="carrusel-boton prev" onclick="moverCarrusel(-1)">&#10094;</button>
+                <div class="carrusel-items">
+                    <div class="carrusel-item">
+                        <img src="imagenes/joker 2.jpg" alt="joker2">
+                        <div class="overlay">
+                            <h3>Joker 2</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('/imagenes/joker 2.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/sustancia.jpg" alt="LaSustancia">
+                        <div class="overlay">
+                            <h3>La Sustancia</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('/imagenes/sustancia.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/profesionpeligro.avif" alt="ProfesionPeligro">
+                        <div class="overlay">
+                            <h3>Profesión Peligro</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('/imagenes/profesionpeligro.avif')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/bad-boys-life.webp" alt="bad-boys-life">
+                        <div class="overlay">
+                            <h3>Bad Boys for Life</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/bad-boys-life.webp')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/deadpool.jpg" alt="deadpool">
+                        <div class="overlay">
+                            <h3>Deadpool and Wolverine</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/deadpool.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/escuadron6.avif" alt="escuadron6">
+                        <div class="overlay">
+                            <h3>Escuadron 6</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/escuadron6.avif')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/johnwick.jpg" alt="johnwick">
+                        <div class="overlay">
+                            <h3>John Wick 4</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/johnwick.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="imagenes/rapidoyfurioso.jpg" alt="rapidoyfurioso">
+                        <div class="overlay">
+                            <h3>Rápido y Furioso X</h3><br>
+                            <div class="botones">
+                                <button class="boton" id="boton">▶ Reproducir</button>
+                                <button class="boton agregar-mi-lista" onclick="agregarMiLista('imagenes/rapidoyfurioso.jpg')" id="boton">✚ Añadir a Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-boton next" onclick="moverCarrusel(1)">&#10095;</button>
+            </div>
+        </section>
+	</main><br><br>
+    <footer class="footer">
+        <div class="contenido-footer">
+            <div class="seccion-footer">
+                <p><a href="#">Centro de ayuda</a></p>
+                <p><a href="#">Empleo</a></p>
+                <p><a href="#">Preferencias de cookies</a></p>
+            </div>
+            <div class="seccion-footer">
+                <p><a href="#">Trajetas de regalo</a></p>
+                <p><a href="#">Términos de uso</a></p>
+                <p><a href="#">Información corporativa</a></p>
+            </div>
+            <div class="seccion-footer">
+                <p><a href="#">Prensa</a></p>
+                <p><a href="#">Privacidad</a></p>
+                <p><a href="#">contáctanos</a></p>
+            </div>
+        </div><br><br>
+        <div class="info-final">
+            <h3>
+                Proyecto de clase. Curso Programación Básica. Talento Tech.
+            </h3>
+        </div>
+    </footer>
+</body>
+</html>
